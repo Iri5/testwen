@@ -1,0 +1,117 @@
+/* Base styles */
+:root {
+    --background: #ffffff;
+	--background-secondary: #3b3b3b;
+	--caption-and-label-text: #858584;
+	--text: #000000;
+	--call-to-action: #a259ff;
+	--blue-accent: #377df7;
+	--red-accent: #ff7262;
+    --gradient-blue: linear-gradient(170deg, #a259ff 0%, #377df7 100%);
+    --gradient-pink: linear-gradient(149deg, #a259ff 0%, #ff6250 100%);
+    --font-family: "Space Mono", sans-serif;
+    --second-family: "Work Sans", sans-serif;
+}
+
+html {
+    position: relative;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text);
+    background: var(--background);
+    line-height: 160%;
+}
+
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    max-height: 100%;
+}
+
+
+button {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+    margin: 0;
+}
+
+iframe {
+    border: none;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.container{
+    --offset-container: 30px;
+    max-width: calc(1050px + var(--offset-container)*2);
+    padding: 0 var(--offset-container);
+    margin: 0 auto;
+}
+
+@media (width >= 620px){
+    .container{
+        --offset-container: 72px;
+    }
+}
+@media (width >= 1140px){
+    .container{
+        --offset-container: 115px;
+    }
+}
+.main-content{
+    padding-top: calc(79px + 30px);
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    min-height: calc(100vh - 80px);
+}

@@ -1,0 +1,85 @@
+.date-column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.date-stroke {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.date-art-col {
+  display: inline-block;
+}
+
+.date-column-stroked {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.date-column-stroked .month {
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.date-column-stroked .year {
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+.date-half-stroke {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.date-half-stroke .month {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.date-half-stroke .date {
+  font-size: 36px;
+}
+.date-half-stroke .year {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.date-time {
+  width: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.date-time .up {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.date-time .up .month {
+  flex-basis: 70px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.date-time .up .date {
+  font-size: 36px;
+}
+.date-time .up .time {
+  flex-basis: 70px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.date-time .down {
+  margin-top: -15px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.date-time .down .year {
+  text-align: center;
+  font-size: 16px;
+}/*# sourceMappingURL=dates.css.map */

@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'Ariston Normal';
+	src: url('./fonts/ariston_normal.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/ariston_normal.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/ariston_normal.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/ariston_normal.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/ariston_normal.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/ariston_normal.svg#ariston_normal') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+.f-ariston-normal{
+	font-family: 'Ariston Normal';
+	font-style: normal;
+    font-weight: 400;
+}

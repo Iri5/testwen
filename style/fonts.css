@@ -1,0 +1,108 @@
+/*ALS*/
+@font-face {
+    font-family: 'ALS';
+    font-style: normal;
+    font-weight: 300;
+    src:  url(../fonts/ALS/ALSFinlandiaScript.otf) format('otf');
+}
+@font-face {
+    font-family: 'ALS';
+    font-style: normal;
+    font-weight: 700;
+    src:  url(../fonts/ALS/ALSFinlandiaScript-Bold.otf) format('otf');
+}
+@font-face {
+    font-family: 'ALS';
+    font-style: normal;
+    font-weight: 400;
+    src:  url(../fonts/ALS/ALSFinlandiaScript-Frost.otf) format('otf');
+}
+/*Andy_Bold*/
+@font-face {
+    font-family: 'Andy_Bold';
+    font-style: normal;
+    font-weight: 400;
+    src:  url(../fonts/Andy_Bold_0.otf) format('otf');
+}
+
+/*Anjhay Cirillic*/
+@font-face {
+	font-family: 'Anjhay';
+	src: url('../fonts/anjhay/anjhay.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/anjhay/anjhay.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/anjhay/anjhay.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/anjhay/anjhay.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/anjhay/anjhay.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/anjhay/anjhay.svg#anjhay') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+/*BodegaScript*/
+@font-face {
+    font-family: 'Bodega Script';
+    font-style: normal;
+    font-weight: 400;
+    src:  url(../fonts/BodegaScript_0.ttf) format('ttf');
+}
+
+/*Disruptors Script*/
+@font-face {
+    font-family: 'Disruptors Script';
+    font-style: normal;
+    font-weight: 400;
+    src:  url(../fonts/DisruptorsScript.otf) format('otf');
+}
+
+/*mr_HamiltoneG*/
+@font-face {
+    font-family: 'mr_HamiltoneG Rus Regular';
+    font-style: normal;
+    font-weight: 400;
+    src:  url(../fonts/mr_HamiltoneG\ Rus\ Regular.otf) format('otf');
+}
+
+/*Ouvality*/
+@font-face {
+    font-family: 'Ouvality';
+    font-style: normal;
+    font-weight: 400;
+    src:  url(../fonts/Ouvality.ttf) format('ttf');
+}
+
+.ouvality{
+    font-family: 'Ouvality';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+}
+.hamiltone{
+    font-family: 'mr_HamiltoneG Rus Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+}
+.disruptor{
+    font-family: 'Disruptors Script';
+    font-style: normal;
+    font-weight: 400;
+}
+.bodega{
+    font-family: 'Bodega Script';
+    font-style: normal;
+    font-weight: 400;
+}
+.anjhay{
+    font-family: 'Anjhay';
+    font-style: normal;
+    font-weight: 400;
+}
+.andy{
+    font-family: 'Andy_Bold';
+    font-style: normal;
+    font-weight: 400;
+}
+.als{
+    font-family: 'ALS';
+    font-style: normal;
+    font-weight: 400;
+}
+

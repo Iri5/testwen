@@ -1,0 +1,674 @@
+@import "start";
+/*
+.calendar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.calendar td,
+.calendar th {
+    position: relative;
+    font-weight: normal;
+    padding: 2px 5px;
+    text-align: center;
+}
+.calendar th {
+    font-size: 12px;
+    font-size: 28px;
+}
+.calendar td {
+    font-size: 16px;
+    font-size: 36px;
+}
+.calendar caption {
+    margin-bottom: 10px;
+}
+.calendar .day {
+    position: relative;
+}
+.calendar .heart {
+    position: absolute;
+    height: 120%;
+    width: 120%;
+    top: -10%;
+    right: -10%;
+    will-change: transform;
+    animation: heartbeat 2s infinite;
+}
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+.calendar.f-annabelle {
+    font-size: 24px;
+}*/
+
+.calendar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    td,
+    th {
+        position: relative;
+        font-weight: normal;
+        padding: 2px 5px;
+        text-align: center;
+    }
+    th {
+        font-size: 12px;
+        font-size: 28px;
+    }
+    td {
+        font-size: 16px;
+        font-size: 36px;
+    }
+    caption {
+        margin-bottom: 10px;
+    }
+    .day {
+        position: relative;
+    }
+    .heart {
+        position: absolute;
+        height: 120%;
+        width: 120%;
+        top: -10%;
+        right: -10%;
+        will-change: transform;
+        animation: heartbeat 2s infinite;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+.calendar.f-annabelle{
+    td,
+    th {
+        padding: 2px 5px;
+    }
+    th {
+        font-size: 20px;
+    }
+    td {
+        font-size: 24px;
+    }
+    caption {
+        font-size: 28px;
+    }
+    .heart {
+        right: 2%;
+        top: 0%;
+    }
+}
+.calendar.f-ariston-normal{
+    td,
+    th {
+        padding: 1px 8px;
+    }
+    th {
+        font-size: 24px;
+    }
+    td {
+        font-size: 28px;
+    }
+    caption {
+        margin-bottom: 7px;
+        font-size: 32px;
+    }
+    .heart {
+        right: 2%;
+        top: 0%;
+    }
+}
+.calendar.f-bolero-script{
+    td,
+    th {
+        padding: 0px 12px;
+    }
+    th {
+        font-size: 24px;
+    }
+    td {
+        font-size: 28px;
+    }
+    caption {
+        margin-bottom: 10px;
+        font-size: 32px;
+    }
+    .heart {
+        right: 0%;
+        top: 0%;
+    }
+}
+.calendar.f-calligraphia-one{
+    td,
+    th {
+        padding: 2px 5px;
+    }
+    th {
+        font-size: 24px;
+    }
+    td {
+        font-size: 42px;
+    }
+    caption {
+        margin-bottom: 5px;
+        font-size: 46px;
+    }
+    .heart {
+        right: -2%;
+        top: 5%;
+    }
+}
+.calendar.f-larisa-script{
+    td,
+    th {
+        padding: 2px 7px;
+    }
+    th {
+        font-size: 24px;
+    }
+    td {
+        font-size: 32px;
+    }
+    caption {
+        margin-bottom: 7px;
+        font-size: 32px;
+    }
+    .heart {
+        right: -2%;
+        top: 5%;
+    }
+}
+.calendar.f-mon-amour-one-medium{
+    td,
+    th {
+        padding: 2px 7px;
+    }
+    th {
+        font-size: 20px;
+    }
+    td {
+        font-size: 24px;
+    }
+    caption {
+        margin-bottom: 7px;
+        font-size: 24px;
+    }
+    .heart {
+        right: -1%;
+        top: 12%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .calendar.f-annabelle{
+        td,
+        th {
+            padding: 0px 5px;
+        }
+        th {
+            font-size: 16px;
+        }
+        td {
+            font-size: 20px;
+        }
+        caption {
+            font-size: 20px;
+            margin-bottom: 7px;
+        }
+        .heart {
+            right: 2%;
+            top: 0%;
+        }
+    }
+    .calendar.f-ariston-normal{
+        td,
+        th {
+            padding: 0px 8px;
+        }
+        th {
+            font-size: 18px;
+        }
+        td {
+            font-size: 24px;
+        }
+        caption {
+            margin-bottom: 7px;
+            font-size: 24px;
+        }
+        .heart {
+            right: 1%;
+            top: 0%;
+        }
+    }
+    .calendar.f-bolero-script{
+        td,
+        th {
+            padding: 0px 10px;
+        }
+        th {
+            font-size: 18px;
+        }
+        td {
+            font-size: 24px;
+        }
+        caption {
+            margin-bottom: 5px;
+            font-size: 24px;
+        }
+        .heart {
+            right: 0%;
+            top: 0%;
+        }
+    }
+    .calendar.f-calligraphia-one{
+        td,
+        th {
+            padding: 0px 5px;
+        }
+        th {
+            font-size: 20px;
+        }
+        td {
+            font-size: 36px;
+        }
+        caption {
+            margin-bottom: 5px;
+            font-size: 36px;
+        }
+        .heart {
+            right: -2%;
+            top: 5%;
+        }
+    }
+    .calendar.f-larisa-script{
+        td,
+        th {
+            padding: 0px 7px;
+        }
+        th {
+            font-size: 18px;
+        }
+        td {
+            font-size: 24px;
+        }
+        caption {
+            margin-bottom: 0px;
+            font-size: 24px;
+        }
+        .heart {
+            right: 2%;
+            top: 2%;
+        }
+    }
+    .calendar.f-mon-amour-one-medium{
+        td,
+        th {
+            padding: 0px 7px;
+        }
+        th {
+            font-size: 14px;
+        }
+        td {
+            font-size: 20px;
+        }
+        caption {
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        .heart {
+            right: -1%;
+            top: 12%;
+        }
+    }
+}
+@media screen and (max-width: 769px) {
+    .calendar.f-annabelle{
+        td,
+        th {
+            padding: 0px 8px;
+        }
+        th {
+            font-size: 12px;
+        }
+        td {
+            font-size: 16px;
+        }
+        caption {
+            font-size: 18px;
+            margin-bottom: 0px;
+        }
+        .heart {
+            right: 2%;
+            top: 0%;
+        }
+    }
+    .calendar.f-ariston-normal{
+        td,
+        th {
+            padding: 0px 5px;
+        }
+        th {
+            font-size: 18px;
+        }
+        td {
+            font-size: 22px;
+        }
+        caption {
+            margin-bottom: 7px;
+            font-size: 24px;
+        }
+        .heart {
+            right: 1%;
+            top: 0%;
+        }
+    }
+    .calendar.f-mon-amour-one-medium{
+        td,
+        th {
+            padding: 0px 7px;
+        }
+        th {
+            font-size: 14px;
+        }
+        td {
+            font-size: 16px;
+        }
+        caption {
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        .heart {
+            right: -1%;
+            top: 12%;
+        }
+    }
+    .calendar.f-calligraphia-one{
+        td,
+        th {
+            padding: 0px 5px;
+        }
+        th {
+            font-size: 18px;
+        }
+        td {
+            font-size: 32px;
+        }
+        caption {
+            margin-bottom: 5px;
+            font-size: 32px;
+        }
+        .heart {
+            right: -2%;
+            top: 5%;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .calendar.f-annabelle{
+        td,
+        th {
+            padding: 0px 5px;     
+        }
+        th {
+            font-size: 10px;
+        }
+        td {
+            font-size: 14px;
+        }
+        caption {
+            font-size: 18px;
+            margin-bottom: 0px;
+        }
+        .heart {
+            right: 2%;
+            top: 0%;
+        }
+    }
+    .calendar.f-ariston-normal{
+        td,
+        th {
+            padding: 0px 5px;
+        }
+        th {
+            font-size: 12px;
+        }
+        td {
+            font-size: 18px;
+        }
+        caption {
+            margin-bottom: 0px;
+            font-size: 20px;
+        }
+        .heart {
+            right: 1%;
+            top: 0%;
+        }
+    }
+    .calendar.f-bolero-script{
+        td,
+        th {
+            padding: 0px 8px;
+        }
+        th {
+            font-size: 12px;
+        }
+        td {
+            font-size: 16px;
+        }
+        caption {
+            margin-bottom: 0px;
+            font-size: 18px;
+        }
+        .heart {
+            right: 0%;
+            top: 0%;
+        }
+    }
+    .calendar.f-calligraphia-one{
+        td,
+        th {
+            padding: 0px 5px;
+        }
+        th {
+            font-size: 14px;
+        }
+        td {
+            font-size: 28px;
+        }
+        caption {
+            margin-bottom: 0px;
+            font-size: 28px;
+        }
+        .heart {
+            right: -2%;
+            top: 5%;
+        }
+    }
+    .calendar.f-larisa-script{
+        td,
+        th {
+            padding: 0px 7px;
+        }
+        th {
+            font-size: 12px;
+        }
+        td {
+            font-size: 18px;
+        }
+        caption {
+            margin-bottom: 0px;
+            font-size: 20px;
+        }
+        .heart {
+            right: 2%;
+            top: 2%;
+        }
+    }
+    .calendar.f-mon-amour-one-medium{
+        td,
+        th {
+            padding: 0px 5px;
+        }
+        th {
+            font-size: 12px;
+        }
+        td {
+            font-size: 14px;
+        }
+        caption {
+            margin-bottom: 0px;
+            font-size: 16px;
+        }
+        .heart {
+            right: -1%;
+            top: 12%;
+        }
+    }
+}
+@media screen and (max-width: 340px) {
+    .calendar.f-annabelle{
+        td,
+        th {
+            padding: 0px 2px;     
+        }
+        th {
+            font-size: 10px;
+        }
+        td {
+            font-size: 14px;
+        }
+        caption {
+            font-size: 18px;
+            margin-bottom: 0px;
+        }
+        .heart {
+            right: 2%;
+            top: 0%;
+        }
+    }
+    .calendar.f-ariston-normal{
+        td,
+        th {
+            padding: 0px 2px;
+        }
+        th {
+            font-size: 12px;
+        }
+        td {
+            font-size: 18px;
+        }
+        caption {
+            margin-bottom: 0px;
+            font-size: 20px;
+        }
+        .heart {
+            right: 1%;
+            top: 0%;
+        }
+    }
+    .calendar.f-bolero-script{
+        td,
+        th {
+            padding: 0px 5px;
+        }
+        th {
+            font-size: 12px;
+        }
+        td {
+            font-size: 16px;
+        }
+        caption {
+            margin-bottom: 0px;
+            font-size: 18px;
+        }
+        .heart {
+            right: 0%;
+            top: 0%;
+        }
+    }
+    .calendar.f-calligraphia-one{
+        td,
+        th {
+            padding: 0px 3px;
+        }
+        th {
+            font-size: 12px;
+        }
+        td {
+            font-size: 24px;
+        }
+        caption {
+            margin-bottom: 0px;
+            font-size: 28px;
+        }
+        .heart {
+            right: -2%;
+            top: 5%;
+        }
+    }
+    .calendar.f-larisa-script{
+        td,
+        th {
+            padding: 0px 4px;
+        }
+        th {
+            font-size: 12px;
+        }
+        td {
+            font-size: 18px;
+        }
+        caption {
+            margin-bottom: 0px;
+            font-size: 20px;
+        }
+        .heart {
+            right: 2%;
+            top: 2%;
+        }
+    }
+    .calendar.f-mon-amour-one-medium{
+        td,
+        th {
+            padding: 0px 3px;
+        }
+        th {
+            font-size: 10px;
+        }
+        td {
+            font-size: 14px;
+        }
+        caption {
+            margin-bottom: 0px;
+            font-size: 16px;
+        }
+        .heart {
+            right: -1%;
+            top: 10%;
+        }
+    }
+}

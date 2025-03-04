@@ -1,0 +1,222 @@
+.violet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  line-height: 18px;
+}
+.violet .violet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.violet h1 {
+  color: #48105b;
+  font-size: 40px;
+  display: block;
+  line-height: 49px;
+  text-align: center;
+}
+.violet h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: right;
+  line-height: 21px;
+}
+.violet h3 {
+  color: #48105b;
+  font-size: 32px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 39px;
+  text-align: center;
+}
+.violet div {
+  font-weight: normal;
+}
+.violet .anons {
+  text-align: center;
+}
+.violet .heart path {
+  fill: #48105b;
+}
+.violet .hero-img {
+  width: 298px;
+  height: 656px;
+}
+.violet .hero {
+  display: flex;
+  flex-direction: row;
+  margin-right: -10px;
+  margin-left: -30px;
+}
+.violet .hero .main {
+  margin-top: 70px;
+  margin-bottom: 80px;
+  margin-left: -125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: end;
+  width: 155px;
+}
+.violet .hero .date {
+  font-size: 24px;
+  width: 105px;
+}
+.violet .place {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.violet .place .places {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.violet .place h4 {
+  color: #48105b;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.violet .place .place-img-img {
+  width: 88px;
+  height: 197px;
+}
+.violet .plane .plane-time {
+  color: #48105b;
+  font-size: 20px;
+  padding-right: 20px;
+}
+.violet .plane .plane-name {
+  width: 160px;
+}
+.violet .wish {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.violet .wish .wish-row {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.violet .wish .wish-row .wish-present {
+  min-width: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.violet .wish .wish-row .wish-dress {
+  min-width: 39px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.violet .wish .wish-row .wish-flower {
+  min-width: 51px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.violet .confirmation .text {
+  margin-bottom: 15px;
+}
+.violet .confirmation form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.violet .confirmation form label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.violet .confirmation .check-row,
+.violet .confirmation .radio-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.violet .confirmation .check-row label,
+.violet .confirmation .radio-row label {
+  vertical-align: middle;
+}
+.violet .confirmation .check-row input[type=checkbox],
+.violet .confirmation .radio-row input[type=checkbox] {
+  accent-color: #48105b;
+}
+.violet .confirmation .check-row input[type=radio],
+.violet .confirmation .radio-row input[type=radio] {
+  accent-color: #48105b;
+}
+.violet .confirmation .question {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.violet .confirmation .answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.violet .confirmation .question-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.violet .confirmation .question-input input {
+  border: none;
+  background-color: rgba(72, 16, 91, 0.1725490196);
+  border-radius: 5px;
+}
+.violet .confirmation button {
+  background-color: #48105b;
+  color: white;
+  text-transform: uppercase;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  align-self: end;
+}
+.violet .contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.violet .contacts .tg-text {
+  margin-bottom: 15px;
+}
+.violet .contacts .tg-link {
+  margin-bottom: 15px;
+}
+.violet .timer {
+  display: grid;
+  grid-template-columns: 4.5rem 0.5rem 4.5rem 0.5rem 4.5rem 0.5rem 4.5rem;
+  font-size: 30px;
+  justify-items: center;
+  color: #48105b;
+}
+.violet .timer .timer__item {
+  position: relative;
+}
+.violet .timer .timer__item::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  color: #48105b;
+}/*# sourceMappingURL=violet.css.map */
