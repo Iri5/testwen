@@ -79,22 +79,29 @@
 }
 .violet .place h4 {
   color: #48105b;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 30px;
   margin-bottom: 0;
   margin-top: 0;
 }
 .violet .place .place-img-img {
+  margin-left: -30px;
   width: 88px;
   height: 197px;
 }
+.violet .plane {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.violet .plane table {
+  border-spacing: 0px 20px;
+  width: 270px;
+}
 .violet .plane .plane-time {
   color: #48105b;
-  font-size: 20px;
+  font-size: 24px;
   padding-right: 20px;
-}
-.violet .plane .plane-name {
-  width: 160px;
 }
 .violet .wish {
   padding-top: 15px;
@@ -173,7 +180,7 @@
 .violet .confirmation .question-input {
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 5px;
 }
 .violet .confirmation .question-input input {
   border: none;
