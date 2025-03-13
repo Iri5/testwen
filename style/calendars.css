@@ -382,7 +382,7 @@
   }
   .calendar.f-ariston-normal td,
   .calendar.f-ariston-normal th {
-    padding: 0px 5px;
+    padding: 5px 5px;
   }
   .calendar.f-ariston-normal th {
     font-size: 18px;
@@ -391,7 +391,7 @@
     font-size: 22px;
   }
   .calendar.f-ariston-normal caption {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     font-size: 24px;
   }
   .calendar.f-ariston-normal .heart {
@@ -454,24 +454,26 @@
     right: 2%;
     top: 0%;
   }
-  .calendar.f-ariston-normal td,
-  .calendar.f-ariston-normal th {
-    padding: 0px 5px;
-  }
-  .calendar.f-ariston-normal th {
-    font-size: 12px;
-  }
-  .calendar.f-ariston-normal td {
-    font-size: 18px;
-  }
-  .calendar.f-ariston-normal caption {
-    margin-bottom: 0px;
-    font-size: 20px;
-  }
-  .calendar.f-ariston-normal .heart {
-    right: 1%;
-    top: 0%;
-  }
+  /*.calendar.f-ariston-normal{
+      td,
+      th {
+          padding: 0px 5px;
+      }
+      th {
+          font-size: 12px;
+      }
+      td {
+          font-size: 18px;
+      }
+      caption {
+          margin-bottom: 0px;
+          font-size: 20px;
+      }
+      .heart {
+          right: 1%;
+          top: 0%;
+      }
+  }*/
   .calendar.f-bolero-script td,
   .calendar.f-bolero-script th {
     padding: 0px 8px;
