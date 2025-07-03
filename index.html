@@ -231,7 +231,7 @@
 
                     <div class="question-input">
                         <label for="guest_name">Фамилия Имя</label>
-                        <input type="text" name="guest" id="guest_name">
+                        <input type="text" name="guest" id="guest_name" required>
                     </div>
 
                     <div class="question">
@@ -413,6 +413,7 @@
                     .filter(checkbox => checkbox.checked)
                     .map(checkbox => checkbox.value)),
             };
+            if (details.name == null) return;
             // подготавливаем данные для отправки
             let formBody = [];
             for (let property in details) {
