@@ -48,14 +48,13 @@
         width: 298px;
         height: 656px;
     }
-    .vh{
+    .vh {
         height: 100vh;
         display: flex;
         flex-direction: row;
         align-items: center;
     }
     .hero {
-        
         height: 656px;
         display: flex;
         flex-direction: row;
@@ -113,7 +112,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        table{
+        table {
             border-spacing: 0px 20px;
             width: 270px;
         }
@@ -123,7 +122,6 @@
             padding-right: 20px;
         }
         .plane-name {
-            
         }
     }
 
@@ -135,6 +133,8 @@
         .wish-row {
             display: flex;
             flex-direction: row;
+            align-items: center;
+            justify-content: center;
             gap: 15px;
             .wish-present {
                 min-width: 44px;
@@ -159,16 +159,21 @@
             }
         }
         .wish-text {
+            text-align: justify;
         }
     }
 
     .confirmation {
+        display: flex;
+        flex-direction: column;
         .text {
-            margin-bottom: 15px;
+            margin-bottom: 25px;
+            text-align: justify;
         }
         p {
         }
         form {
+            margin-bottom: 15px;
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -178,7 +183,7 @@
                 align-items: center;
             }
         }
-        
+
         .check-row,
         .radio-row {
             display: flex;
@@ -225,34 +230,35 @@
             display: flex;
             flex-direction: column;
             gap: 5px;
-            input{
+            input {
                 height: 30px;
                 border: none;
                 background-color: #48105b2c;
-                border-radius: 5px
+                border-radius: 5px;
             }
-            input:hover{
+            input:hover {
                 border: 1px solid #48105b;
             }
-            input:focus{
+            input:focus {
                 border: 1px solid #48105b;
                 outline: 0;
                 box-shadow: none;
             }
-            input:focus-visible{
+            input:focus-visible {
                 border: 1px solid #48105b;
                 outline: 0;
                 box-shadow: none;
             }
         }
-        button{
+        button {
             background-color: #48105b;
             color: white;
             text-transform: uppercase;
-            width: 100px;
+            width: 120px;
             height: 30px;
             border-radius: 5px;
             align-self: end;
+            margin-top: 15px;
         }
     }
 
@@ -262,6 +268,7 @@
         align-items: center;
         .tg-text {
             margin-bottom: 15px;
+            text-align: justify;
         }
         .tg-link {
             margin-bottom: 15px;
@@ -287,6 +294,512 @@
             transform: translateX(-50%);
             font-size: 22px;
             color: #48105b;
+        }
+    }
+    .add_guest {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .add_guest_text {
+            color: #48105b;
+        }
+    }
+}
+@media screen and (width > 400px) and (width < 450px) {
+    .violet {
+        line-height: 20px;
+        .violet-container {
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+    }
+}
+@media screen and (width >= 450px) and (width < 500px) {
+    .violet {
+        line-height: 20px;
+        .violet-container {
+            padding-right: 70px;
+            padding-left: 70px;
+        }
+    }
+}
+@media screen and (width >= 500px) and (width < 600px) {
+    .violet {
+        line-height: 20px;
+        .violet-container {
+            padding-right: 100px;
+            padding-left: 100px;
+        }
+        .plane {
+            table {
+                width: 350px;
+            }
+            .plane-time {
+                padding-left: 20px;
+                padding-right: 30px;
+            }
+        }
+    }
+}
+@media screen and (width >= 600px) and (width < 700px) {
+    .violet {
+        font-size: 16px;
+        line-height: 20px;
+        .violet-container {
+            padding-right: 120px;
+            padding-left: 120px;
+        }
+        .plane {
+            table {
+                width: 440px;
+            }
+            .plane-time {
+                font-size: 26px;
+                padding-left: 60px;
+                padding-right: 30px;
+            }
+        }
+        .wish {
+            .wish-row {
+                gap: 20px;
+                .wish-present {
+                    svg{
+                        min-width: 50px;
+                    }
+                }
+                .wish-dress {
+                    svg{
+                        min-width: 45px;
+                    }
+                }
+                .wish-flower {
+                    svg{
+                        min-width: 60px;
+                    }
+                }
+            }
+            .wish-text {
+                
+            }
+        }
+    }
+}
+@media screen and (width >= 700px) and (width < 800px) {
+    .violet {
+        font-size: 16px;
+        line-height: 20px;
+        .violet-container {
+            padding-right: 140px;
+            padding-left: 140px;
+        }
+        .place {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            .places {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+            }
+            .place-container {
+            }
+            .place-title {
+            }
+            .place-address {
+            }
+            .place-img {
+            }
+            h4 {
+                color: #48105b;
+                font-size: 26px;
+                line-height: 35px;
+                margin-bottom: 0;
+                margin-top: 5px;
+            }
+            .place-img-img {
+                margin-left: -38px;
+                width: 111px;
+                height: 250px;
+            }
+        }
+        .plane {
+            table {
+                width: 500px;
+            }
+            .plane-time {
+                font-size: 26px;
+                padding-left: 90px;
+                padding-right: 30px;
+            }
+        }
+        .wish {
+            .wish-row {
+                gap: 20px;
+                .wish-present {
+                    svg{
+                        min-width: 50px;
+                    }
+                }
+                .wish-dress {
+                    svg{
+                        min-width: 45px;
+                    }
+                }
+                .wish-flower {
+                    svg{
+                        min-width: 60px;
+                    }
+                }
+            }
+            .wish-text {
+                
+            }
+        }
+    }
+    
+}
+@media screen and (width >= 800px) and (width < 900px) {
+    .violet {
+        font-size: 16px;
+        line-height: 20px;
+        .violet-container {
+            padding-right: 150px;
+            padding-left: 150px;
+        }
+        .place {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            .places {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+            }
+            .place-container {
+            }
+            .place-title {
+            }
+            .place-address {
+            }
+            .place-img {
+            }
+            h4 {
+                color: #48105b;
+                font-size: 26px;
+                line-height: 35px;
+                margin-bottom: 0;
+                margin-top: 5px;
+            }
+            .place-img-img {
+                margin-left: -38px;
+                width: 111px;
+                height: 250px;
+            }
+        }
+        .plane {
+            table {
+                width: 570px;
+            }
+            .plane-time {
+                font-size: 26px;
+                padding-left: 110px;
+                padding-right: 30px;
+            }
+        }
+        .wish {
+            .wish-row {
+                gap: 35px;
+                .wish-present {
+                    svg{
+                        min-width: 55px;
+                    }
+                }
+                .wish-dress {
+                    svg{
+                        min-width: 50px;
+                    }
+                }
+                .wish-flower {
+                    svg{
+                        min-width: 65px;
+                    }
+                }
+            }
+            .wish-text {
+                
+            }
+        }
+    }
+}
+@media screen and (width >= 900px) and (width < 1000px) {
+    .violet {
+        font-size: 16px;
+        line-height: 20px;
+        .violet-container {
+            max-width: 650px;
+            
+        }
+        h1 {
+            color: #48105b;
+            font-size: 50px;
+            display: block;
+            line-height: 49px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: normal;
+            text-align: right;
+            line-height: 21px;
+        }
+        h3 {
+            color: #48105b;
+            font-size: 40px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            line-height: 39px;
+            text-align: center;
+        }
+        /* .hero-img {
+        width: 298px;
+        height: 656px;
+    }*/
+        .hero-img {
+            width: 340px;
+            height: 750px;
+        }
+        .vh {
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .hero {
+            height: 750px;
+            display: flex;
+            flex-direction: row;
+            margin-right: -10px;
+            margin-left: -30px;
+            .main {
+                margin-top: 70px;
+                margin-bottom: 80px;
+                margin-left: -175px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: end;
+                width: 200px;
+            }
+            .date {
+                font-size: 28px;
+                width: 110px;
+            }
+        }
+        .place {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            .places {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+            }
+            .place-container {
+            }
+            .place-title {
+            }
+            .place-address {
+            }
+            .place-img {
+            }
+            h4 {
+                color: #48105b;
+                font-size: 26px;
+                line-height: 35px;
+                margin-bottom: 0;
+                margin-top: 5px;
+            }
+            .place-img-img {
+                margin-left: -38px;
+                width: 111px;
+                height: 250px;
+            }
+        }
+        .plane {
+            table {
+                width: 610px;
+            }
+            .plane-time {
+                font-size: 26px;
+                padding-left: 110px;
+                padding-right: 30px;
+            }
+        }
+        .wish {
+            
+            .wish-row {
+                gap: 35px;
+                .wish-present {
+                    svg{
+                        min-width: 55px;
+                    }
+                }
+                .wish-dress {
+                    svg{
+                        min-width: 50px;
+                    }
+                }
+                .wish-flower {
+                    svg{
+                        min-width: 65px;
+                    }
+                }
+            }
+            .wish-text {
+                
+            }
+        }
+    }
+}
+@media screen and (width >= 1000px) {
+    .violet {
+        font-size: 20px;
+        line-height: 24px;
+        .violet-container {
+            max-width: 650px;
+        }
+        h1 {
+            color: #48105b;
+            font-size: 50px;
+            display: block;
+            line-height: 49px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: normal;
+            text-align: right;
+            line-height: 21px;
+        }
+        h3 {
+            color: #48105b;
+            font-size: 40px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            line-height: 39px;
+            text-align: center;
+        }
+        .hero-img {
+            width: 340px;
+            height: 750px;
+        }
+        .vh {
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .hero {
+            height: 750px;
+            display: flex;
+            flex-direction: row;
+            margin-right: -10px;
+            margin-left: -30px;
+            .main {
+                margin-top: 70px;
+                margin-bottom: 80px;
+                margin-left: -175px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: end;
+                width: 200px;
+            }
+            .date {
+                font-size: 28px;
+                width: 110px;
+            }
+        }
+        .place {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            .places {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+            }
+            .place-container {
+            }
+            .place-title {
+            }
+            .place-address {
+            }
+            .place-img {
+            }
+            h4 {
+                color: #48105b;
+                font-size: 32px;
+                line-height: 35px;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+            .place-img-img {
+                margin-left: -38px;
+                width: 134px;
+                height: 300px;
+            }
+        }
+        .plane {
+            table {
+                width: 610px;
+            }
+            .plane-time {
+                font-size: 32px;
+                padding-left: 110px;
+                padding-right: 30px;
+            }
+        }
+        .wish {
+            .wish-row {
+                gap: 35px;
+                .wish-present {
+                    svg{
+                        min-width: 55px;
+                    }
+                }
+                .wish-dress {
+                    svg{
+                        min-width: 50px;
+                    }
+                }
+                .wish-flower {
+                    svg{
+                        min-width: 65px;
+                    }
+                }
+            }
+            .wish-text {
+                
+            }
+        }
+        .confirmation{
+            #send_form{
+                font-size: 16px;
+            }
         }
     }
 }

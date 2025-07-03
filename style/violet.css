@@ -119,6 +119,8 @@
 .violet .wish .wish-row {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 15px;
 }
 .violet .wish .wish-row .wish-present {
@@ -142,10 +144,19 @@
   justify-content: center;
   align-items: center;
 }
+.violet .wish .wish-text {
+  text-align: justify;
+}
+.violet .confirmation {
+  display: flex;
+  flex-direction: column;
+}
 .violet .confirmation .text {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  text-align: justify;
 }
 .violet .confirmation form {
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -232,10 +243,11 @@
   background-color: #48105b;
   color: white;
   text-transform: uppercase;
-  width: 100px;
+  width: 120px;
   height: 30px;
   border-radius: 5px;
   align-self: end;
+  margin-top: 15px;
 }
 .violet .contacts {
   display: flex;
@@ -244,6 +256,7 @@
 }
 .violet .contacts .tg-text {
   margin-bottom: 15px;
+  text-align: justify;
 }
 .violet .contacts .tg-link {
   margin-bottom: 15px;
@@ -267,4 +280,399 @@
   transform: translateX(-50%);
   font-size: 22px;
   color: #48105b;
+}
+.violet .add_guest {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.violet .add_guest .add_guest_text {
+  color: #48105b;
+}
+
+@media screen and (width > 400px) and (width < 450px) {
+  .violet {
+    line-height: 20px;
+  }
+  .violet .violet-container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+@media screen and (width >= 450px) and (width < 500px) {
+  .violet {
+    line-height: 20px;
+  }
+  .violet .violet-container {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
+@media screen and (width >= 500px) and (width < 600px) {
+  .violet {
+    line-height: 20px;
+  }
+  .violet .violet-container {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  .violet .plane table {
+    width: 350px;
+  }
+  .violet .plane .plane-time {
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+}
+@media screen and (width >= 600px) and (width < 700px) {
+  .violet {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .violet .violet-container {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+  .violet .plane table {
+    width: 440px;
+  }
+  .violet .plane .plane-time {
+    font-size: 26px;
+    padding-left: 60px;
+    padding-right: 30px;
+  }
+  .violet .wish .wish-row {
+    gap: 20px;
+  }
+  .violet .wish .wish-row .wish-present svg {
+    min-width: 50px;
+  }
+  .violet .wish .wish-row .wish-dress svg {
+    min-width: 45px;
+  }
+  .violet .wish .wish-row .wish-flower svg {
+    min-width: 60px;
+  }
+}
+@media screen and (width >= 700px) and (width < 800px) {
+  .violet {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .violet .violet-container {
+    padding-right: 140px;
+    padding-left: 140px;
+  }
+  .violet .place {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .violet .place .places {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .violet .place h4 {
+    color: #48105b;
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+  .violet .place .place-img-img {
+    margin-left: -38px;
+    width: 111px;
+    height: 250px;
+  }
+  .violet .plane table {
+    width: 500px;
+  }
+  .violet .plane .plane-time {
+    font-size: 26px;
+    padding-left: 90px;
+    padding-right: 30px;
+  }
+  .violet .wish .wish-row {
+    gap: 20px;
+  }
+  .violet .wish .wish-row .wish-present svg {
+    min-width: 50px;
+  }
+  .violet .wish .wish-row .wish-dress svg {
+    min-width: 45px;
+  }
+  .violet .wish .wish-row .wish-flower svg {
+    min-width: 60px;
+  }
+}
+@media screen and (width >= 800px) and (width < 900px) {
+  .violet {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .violet .violet-container {
+    padding-right: 150px;
+    padding-left: 150px;
+  }
+  .violet .place {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .violet .place .places {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .violet .place h4 {
+    color: #48105b;
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+  .violet .place .place-img-img {
+    margin-left: -38px;
+    width: 111px;
+    height: 250px;
+  }
+  .violet .plane table {
+    width: 570px;
+  }
+  .violet .plane .plane-time {
+    font-size: 26px;
+    padding-left: 110px;
+    padding-right: 30px;
+  }
+  .violet .wish .wish-row {
+    gap: 35px;
+  }
+  .violet .wish .wish-row .wish-present svg {
+    min-width: 55px;
+  }
+  .violet .wish .wish-row .wish-dress svg {
+    min-width: 50px;
+  }
+  .violet .wish .wish-row .wish-flower svg {
+    min-width: 65px;
+  }
+}
+@media screen and (width >= 900px) and (width < 1000px) {
+  .violet {
+    font-size: 16px;
+    line-height: 20px;
+    /* .hero-img {
+        width: 298px;
+        height: 656px;
+    }*/
+  }
+  .violet .violet-container {
+    max-width: 650px;
+  }
+  .violet h1 {
+    color: #48105b;
+    font-size: 50px;
+    display: block;
+    line-height: 49px;
+    text-align: center;
+  }
+  .violet h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: right;
+    line-height: 21px;
+  }
+  .violet h3 {
+    color: #48105b;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .violet .hero-img {
+    width: 340px;
+    height: 750px;
+  }
+  .violet .vh {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .violet .hero {
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+    margin-right: -10px;
+    margin-left: -30px;
+  }
+  .violet .hero .main {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    margin-left: -175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    width: 200px;
+  }
+  .violet .hero .date {
+    font-size: 28px;
+    width: 110px;
+  }
+  .violet .place {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .violet .place .places {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .violet .place h4 {
+    color: #48105b;
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+  .violet .place .place-img-img {
+    margin-left: -38px;
+    width: 111px;
+    height: 250px;
+  }
+  .violet .plane table {
+    width: 610px;
+  }
+  .violet .plane .plane-time {
+    font-size: 26px;
+    padding-left: 110px;
+    padding-right: 30px;
+  }
+  .violet .wish .wish-row {
+    gap: 35px;
+  }
+  .violet .wish .wish-row .wish-present svg {
+    min-width: 55px;
+  }
+  .violet .wish .wish-row .wish-dress svg {
+    min-width: 50px;
+  }
+  .violet .wish .wish-row .wish-flower svg {
+    min-width: 65px;
+  }
+}
+@media screen and (width >= 1000px) {
+  .violet {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .violet .violet-container {
+    max-width: 650px;
+  }
+  .violet h1 {
+    color: #48105b;
+    font-size: 50px;
+    display: block;
+    line-height: 49px;
+    text-align: center;
+  }
+  .violet h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: right;
+    line-height: 21px;
+  }
+  .violet h3 {
+    color: #48105b;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .violet .hero-img {
+    width: 340px;
+    height: 750px;
+  }
+  .violet .vh {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .violet .hero {
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+    margin-right: -10px;
+    margin-left: -30px;
+  }
+  .violet .hero .main {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    margin-left: -175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    width: 200px;
+  }
+  .violet .hero .date {
+    font-size: 28px;
+    width: 110px;
+  }
+  .violet .place {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .violet .place .places {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .violet .place h4 {
+    color: #48105b;
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .violet .place .place-img-img {
+    margin-left: -38px;
+    width: 134px;
+    height: 300px;
+  }
+  .violet .plane table {
+    width: 610px;
+  }
+  .violet .plane .plane-time {
+    font-size: 32px;
+    padding-left: 110px;
+    padding-right: 30px;
+  }
+  .violet .wish .wish-row {
+    gap: 35px;
+  }
+  .violet .wish .wish-row .wish-present svg {
+    min-width: 55px;
+  }
+  .violet .wish .wish-row .wish-dress svg {
+    min-width: 50px;
+  }
+  .violet .wish .wish-row .wish-flower svg {
+    min-width: 65px;
+  }
+  .violet .confirmation #send_form {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=violet.css.map */
